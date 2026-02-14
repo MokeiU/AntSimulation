@@ -4,14 +4,14 @@ import pygame
 from math import sin, cos, floor, sqrt, radians
 
 
-PHEROMONE_EVAPORATION = 5
+PHEROMONE_EVAPORATION = 3
 PHEROMONE_PLACEMENT = 15
 PHEROMONE_MIN = 0
 PHEROMONE_MAX = 400
 
 
 SPEED_DEVIATION = 0.1
-AGENTS_COUNT = 1000
+AGENTS_COUNT = 200
 ANGLE = randint(10, 90) # 45
 DISTANCE = randint(10, 30) / 10 # 1.5
 ROTATION_SPEED = randint(1, 100) / 100 # 0.3
@@ -39,7 +39,7 @@ def make_properties():
     ANGLE = randint(10, 90)  # 45
     DISTANCE = randint(10, 30) / 10  # 1.5
     ROTATION_SPEED = randint(1, 100) / 100  # 0.3
-    SPEED = randint(1, 10) / 10  # 0.1
+    SPEED = randint(1, 3) / 10  # 0.1
     RADIUS = 3  # 2
 
     text = \
